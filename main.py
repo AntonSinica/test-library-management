@@ -1,5 +1,4 @@
 import json
-from typing import Optional, Dict, Any
 
 
 class Book:
@@ -10,11 +9,11 @@ class Book:
 
     def __init__(self, title: str, author: str, year: int) -> None:
         """Инициализация объекта Book."""
-        self.title = title  # название книги
+        self.title = title    # название книги
         self.author = author  # автор книги
-        self.year = year  # год издания книги
-        self._id: Optional[int] = None  # пока книга не в библиотеке - у нее нет id
-        self._status: Optional[str] = None  # пока книга не в библиотеке - у нее нет статуса
+        self.year = year      # год издания книги
+        self._id = None       # пока книга не в библиотеке - у нее нет id
+        self._status = None   # пока книга не в библиотеке - у нее нет статуса
 
     @property
     def title(self) -> str:  # геттер свойства title
